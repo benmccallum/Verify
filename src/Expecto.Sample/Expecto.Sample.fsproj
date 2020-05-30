@@ -2,11 +2,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Expecto.Sample</AssemblyName>
+    <LangVersion>preview</LangVersion>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp3.1;net461</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Expecto.Flip.Sample.fs" />
+    <Content Include="TextFile1.txt" />
     <Compile Include="Expecto.Sample.fs" />
+    <PackageReference Include="Expecto" Version="9.0.0" />
+    <PackageReference Include="Expecto.Diff" Version="9.0.0" />
+    <PackageReference Include="Expecto.FsCheck" Version="9.0.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <ProjectReference Include="..\Verify.Expecto\Verify.Expecto.csproj" />
+    <PackageReference Update="FSharp.Core" Version="4.7.2" />
   </ItemGroup>
 </Project>

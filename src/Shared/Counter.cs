@@ -8,10 +8,7 @@ abstract class Counter<T>
 
     protected abstract T Convert(int i);
 
-    public T Current
-    {
-        get => Convert(current);
-    }
+    public T Current => Convert(current);
 
     public int IntOrNext(T input)
     {

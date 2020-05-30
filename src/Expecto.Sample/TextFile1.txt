@@ -1,0 +1,2 @@
+﻿
+dotnet run -p .\Expecto.Sample\Expecto.Sample.fsproj  -f netcoreapp3.1
